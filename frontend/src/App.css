@@ -1,0 +1,131 @@
+/* General styles for the app */
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Textarea for the story input */
+textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: vertical;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Button styles */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Dropdown menu */
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Styling for the timeline */
+#timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Scene image */
+.scene-image {
+  max-width: 90vw;
+  max-height: 60vh;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+/* Scene description editor */
+.scene-editor {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: vertical;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styles for the buttons at the bottom */
+button:focus {
+  outline: none;
+}
+
+#download-pdf-btn {
+  background-color: #27ae60;
+}
+
+#download-pdf-btn:hover {
+  background-color: #2ecc71;
+}
