@@ -10,3 +10,4 @@
    - Install dependencies with `npm install`.
    - Run the frontend with `npm start`.
    
+https://github.com/user-attachments/assets/e107d34a-526c-476d-b088-d616856d19b0
